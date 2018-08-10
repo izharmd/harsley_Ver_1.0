@@ -12,6 +12,8 @@ public class NotificationDetailsActivity extends AppCompatActivity {
     TextView textNotificationBody;
     TextView textJob_header,textFullName;
     DatabaseHelper db = DatabaseHelper.getInstance(this);
+
+    int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,7 @@ public class NotificationDetailsActivity extends AppCompatActivity {
         initView();
         clickEvent();
     }
+
 
     private void clickEvent() {
 
